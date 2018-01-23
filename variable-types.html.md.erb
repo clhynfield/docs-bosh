@@ -25,7 +25,7 @@ Note that `<value>` indicates value obtained via `((var))` variable syntax.
 Generation options:
 
 * **common_name** [String, required]: Common name. Example: `foo.com`.
-* **alternative_names** [Array, options]: Subject alternative names. Example: `["foo.com", "*.foo.com"]`.
+* **alternative_names** [Array, optional]: Subject alternative names. Example: `["foo.com", "*.foo.com"]`.
 * **is_ca** [Boolean, required]: Indicates whether this is a CA certificate (root or intermediate). Defaults to `false`.
 * **ca** [String, optional]: Specifies name of a CA certificate to use for making this certificate. Can be specified in conjuction with `is_ca` to produce an intermediate certificate.
 * **extended\_key\_usage** [Array, optional]: List of extended key usage. Possible values: `client_auth` and/or `server_auth`. Default: empty. Example: `[client_auth]`.
